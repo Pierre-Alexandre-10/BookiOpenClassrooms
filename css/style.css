@@ -361,3 +361,30 @@ h1 {
     font-size: 16px;
     margin: 0;
 }
+
+/********** Footer *********/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.footer__nav {
+    width: 33.33%;
+    padding: 20px;
+}
+
+.footer__nav__title {
+    margin: 0;
+}
+
+.footer__nav__navlist {
+    padding: 0;
+    margin: 0px;
+}
+
+.footer__nav__navlist__li {
+    margin-top: 15px;
+}
