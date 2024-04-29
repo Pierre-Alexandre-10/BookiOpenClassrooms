@@ -119,39 +119,40 @@ h1 {
 
 /****** Main Searchbar ***********/
 
-.main_searchbar .fa-location-dot {
-    width: 40px;
-    height: 40px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.main__searchbar__group {
+    width: 377px;
+    display: grid;
+    grid-template-columns: 50px 195px 132px;
+    grid-template-rows: 49px;
+    gap: 0;
+}
+
+.fa-location-dot {
+    border: 1px solid;
+    text-align: center;
+    line-height: 2.5;
+    font-size: larger;
+    border: 0px;
     border-radius: 15px 0 0 15px;
     color: black;
     background-color: var(--main-bg-color);
 }
 
 .main_searchbar input {
-    height: 40px;
-    position: relative;
-    right: 4px;
-    bottom: 1.25px;
-    border: 1px solid var(--main-bg-color);
     text-align: center;
     font-weight: 700;
-    font-size: 15px;
+    border: 1px solid;
+    border-color: var(--main-bg-color);
+    font-size: 18px;
 }
 
-.main_searchbar .main__searchbar__group__button {
-    width: 100px;
-    height: 40px;
-    position: relative;
-    right: 10px;
-    bottom: 1.25px;
-    border: 1px solid var(--main-color);
-    border-radius: 0 15px 15px 0;
+.main__searchbar__group__button {
     color: white;
     background-color: var(--main-color);
+    border: 0px;
+    border-radius: 0 15px 15px 0;
     font-weight: 700;
+    font-size: 18px;
 }
 
 .main__searchbar__group__logo {
@@ -528,25 +529,35 @@ h1 {
         padding: 0 20px;
     }
 
+    .main__searchbar__group {
+        width: 100%;
+        grid-template-columns: 50px 1fr 49px;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 15px;
+        z-index: 1;
+    }
+
     .main__searchbar__group__button {
         display: none;
     }
 
     .main__searchbar__group__logo {
+        width: 49px;
+        height: 49px;
         display: unset;
-        height: 40px;
-        width: 40px;
-        position: relative;
-        right: 10px;
-        bottom: 1.5px;
         color: white;
         background-color: #0065fc;
         border: 1px solid var(--main-color);
-        border-radius: 0 15px 15px 0;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 3px 3px 15px lightgray;
     }
 
     .main__searchbar__group__logo i {
         color: white;
+    }
+
+    .main_searchbar input {
+        border-color: transparent;
     }
 
     /******** Filters *********/
@@ -622,10 +633,6 @@ h1 {
     .populaires-cards a {
         width: 100%;
     }
-
-    /* .populaires-cards img {
-        width: 100%;
-    } */
 
     /*********  Activités **********/
 
